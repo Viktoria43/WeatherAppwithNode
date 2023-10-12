@@ -1,13 +1,18 @@
 <html>
 <head>
-
+    <link rel="stylesheet" type="text/css" href="/CSS/background.css">
+    <link rel="stylesheet" type="text/css" href="/CSS/content.css">
+    <link rel="stylesheet" type="text/css" href="/CSS/input.css">
+    <link rel="stylesheet" type="text/css" href="/CSS/OK-button.css">
     <title><%=title%></title>
 </head>
-<body>
+<body class="background">
+<div class="content">
 <h1>To find out the weather in your region, please type in your city</h1>
 <form action="/weather" method="GET">
-<input type="text" name="city" class="input"/>
-<input type="submit" name="content" value="OK" class="OK-container"/>
+<input class="input" type="text" name="city" class="input"/>
+<input type="submit" value="OK" class="OK-button"/>
 </form>
+    <div/>
 </body>
 </html>
