@@ -4,15 +4,15 @@
     <link rel="stylesheet" type="text/css" href="/CSS/content.css">
     <link rel="stylesheet" type="text/css" href="/CSS/input.css">
     <link rel="stylesheet" type="text/css" href="/CSS/OK-button.css">
-    <title><%=title%></title>
+    <title><%= title %></title>
 </head>
 <body class="background">
 <div class="content">
-<h1>To find out the weather in your region, please type in your city</h1>
-<form action="/weather" method="GET">
-<input class="input" type="text" name="city" class="input"/>
-<input type="submit" value="OK" class="OK-button"/>
-</form>
+    <h1>To find out the weather in your region, please type in your city</h1>
+    <form action="/weather" method="GET">
+        <input class="input" type="text" name="city" class="input"/>
+        <input type="submit" value="OK" class="OK-button"/>
+    </form>
     <div/>
 </body>
 </html>

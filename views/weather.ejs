@@ -6,21 +6,18 @@
     <title><%= title %></title>
 
 </head>
-<body class="<%=backgroundClass%>" >
+<body class="<%= backgroundClass %>">
 
 
 <div class="content">
-    <h1><%=city%></h1>
-    <h1><%=temperature%>°C</h1>
+    <h1><%= city %></h1>
+    <h1><%= temperature %>°C</h1>
+    <h1><%= mainData %> (<%= mainDescription %>)</h1>
 
 
-
-        <h1 ><%= mainData %> (<%= mainDescription %>)</h1>
-
-
-<h1 >Feels like: <%=feelsTemp%>°C</h1>
-    <h1>The speed of the wind is: <%= wind%></h1>
-    <h1 >The maximum temperature for the day is <%=maxTemp%>°C and the minimum <%=minTemp%>°C</h1>
+    <h1>Feels like: <%= feelsTemp %>°C</h1>
+    <h1>The speed of the wind is: <%= wind %></h1>
+    <h1>The maximum temperature for the day is <%= maxTemp %>°C and the minimum <%= minTemp %>°C</h1>
 </div>
 
 </body>
