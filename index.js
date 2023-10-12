@@ -36,14 +36,10 @@ axios
                     const dataCurrent = response.data;
                     const mainData = dataCurrent.weather[0].main;
                     let backgroundClass =    'backgroundClass';
-                    if (mainData === 'Clouds') {
+                    if (mainData != 'Clear') {
                         backgroundClass = 'clouds';
-                    } else if (mainData === '') {
-                        backgroundClass = 'clouds';
-                    } else {
-                        backgroundClass =    backgroundClass; // A default background for other conditions
                     }
-                    console.log(mainData);
+
                     const mainDescription = dataCurrent.weather[0].description;
                     const temperature = dataCurrent.main.temp;
                     const feelsTemp = dataCurrent.main.feels_like;
