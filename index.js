@@ -4,7 +4,7 @@ const app = express();
 const axios = require('axios');
 const ejs = require('ejs');
 const apiKey = process.env.API_KEY;
-app.listen(3999);
+app.listen(4000);
 app.use(express.urlencoded({extended: true}));
 app.use(express.static('public'));
 app.set('view engine', 'ejs'); // Use 'ejs' as the view engine
